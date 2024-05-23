@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/server.js": {
+      "includeFiles": "db.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://alura-geek-cyan-two.vercel.app/"
+    },
+    {
+      "source": "/productos/(.*)",
+      "destination": "api/server.js"
+    }
+  ]
+}
+
